@@ -6,6 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
+        android:id="@+id/coordinatorLayoutMain"
         tools:context=".activity.MainActivity">
 
     <android.support.design.widget.AppBarLayout
@@ -23,6 +24,23 @@
     </android.support.design.widget.AppBarLayout>
 
     <include layout="@layout/content_main"/>
+    <com.bcgdv.asia.lib.fanmenu.FanMenuButtons
+            android:background="#CCFFFFFF"
+            android:id="@+id/myFABSubmenu"
+            android:layout_alignBaseline="@+id/fab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:paddingRight="@dimen/fab_submenu_margin_right"
+            android:paddingBottom="@dimen/fab_submenu_margin_bottom"
+            android:textSize="14sp"
+            app:fanMenuLabels="@array/fan_labels"
+            app:fanButtonColors="@array/button_colors"
+            app:fanLeftDrawable="@array/button_icons"
+            app:fanRememberMovedPosition="true"
+            app:fanMinBounceBackAngle="-30"
+            app:fanMaxBounceBackAngle="50"
+            android:visibility="gone" />
 
     <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab"

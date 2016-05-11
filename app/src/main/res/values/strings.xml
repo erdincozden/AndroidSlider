@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Login</string>
+    <string name="app_name">Fan Menu</string>
     <string name="action_settings">Settings</string>
     <string name="login">Login</string>
     <string name="logout">Logout</string>
@@ -8,4 +8,15 @@
      <!-- Errors -->
     <string name="err_valid_email">Enter valid e-mail</string>
     <string name="err_empty_pass">Enter your password</string>
+    <!--Fan Menu-->
+    <string name="menu_top_stories">Top Stories</string>
+    <string name="menu_sports">Sports News</string>
+    <string name="menu_tech">Technology News</string>
+    <string name="menu_local">Local News</string>
+    <string-array name="fan_labels">
+        <item>@string/menu_top_stories</item>
+        <item>@string/menu_local</item>
+        <item>@string/menu_sports</item>
+        <item>@string/menu_tech</item>
+    </string-array>
 </resources>
